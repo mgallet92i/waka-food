@@ -1,0 +1,16 @@
+button {
+  min-height: 2rem;
+  height: 100%;
+  width: 100%;
+  background-color: unset;
+  border: unset;
+}
+
+.w7-button {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.w7-button:disabled {
+  cursor: default;
+}

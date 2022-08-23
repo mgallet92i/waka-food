@@ -1,0 +1,12 @@
+<div *ngIf="listTitle"
+     class="ff-menu-block-title ff-dish-list-title">
+  {{ listTitle }}
+</div>
+<!--TODO: criteria ???-->
+<!--<ff-dish-criteria></ff-dish-criteria>-->
+<div class="w7-flex w7-flex-row w7-flex-wrap ff-dish-list-wrapper"
+     style="margin: 1rem">
+  <ng-container *ngFor="let dish of dishList | filter: filter">
+    <ff-dish-card [data]="dish"></ff-dish-card>
+  </ng-container>
+</div>

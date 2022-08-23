@@ -1,0 +1,121 @@
+@import './src/variables';
+
+.ff-nav-container {
+  height: 100%;
+  color: $primary100;
+  border-right: 5px dashed $primary100;
+  background-color: $secondary110;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.ff-app-logo {
+  width: 7rem;
+  margin-bottom: 2vh;
+}
+
+.ff-img-menu {
+  width: 12rem;
+  margin-bottom: 2vh
+}
+
+.ff-menu-btn {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .ff-menu-btn {
+    display: block;
+    border-radius: 100%;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    background-color: $primary100;
+
+    ::ng-deep .ng-fa-icon {
+      color: $secondary200;
+      font-size: 30px;
+      padding: 6px;
+    }
+  }
+  .ff-nav-container {
+    position: absolute;
+    z-index: 100; // foreground
+    background-color: $secondary111;
+    left: -300px; // FIXME: faire un composant commun menu ???
+    transition: left 1s;
+  }
+  .ff-nav-show {
+    left: 0; // FIXME: faire un composant commun menu ???
+  }
+  .ff-app-logo {
+    width: 5rem;
+  }
+  .ff-img-menu {
+    width: 10rem;
+  }
+  w7-nav-item ::ng-deep {
+    margin: 2px !important;
+
+    .w7-item-label {
+      font-size: 18px !important;
+    }
+
+    .w7-item-img {
+      width: 20px !important;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .ff-nav-container {
+    max-width: 15rem;
+  }
+}
+
+.ff-nav-footer {
+  margin-bottom: 10px;
+}
+
+w7-nav-item ::ng-deep {
+  margin: 10px;
+
+  .w7-item {
+    height: 2.8vw;
+    min-height: 2.2rem;
+    width: 13rem;
+    padding: 0 7px;
+  }
+
+  .w7-item-img {
+    width: 2.2vw;
+  }
+
+  .w7-item-label {
+    margin-left: 15px;
+    font-size: 26px;
+  }
+
+  .w7-highlight {
+    color: $secondary200;
+    background-color: $primary100;
+  }
+}
+
+.ff-order-btn ::ng-deep {
+  .w7-button {
+    height: 2.5rem;
+    min-width: 10rem;
+    width: 100%;
+    background-color: $primary100;
+    border-radius: 18px;
+    color: $secondary200;
+    border: 1px solid $secondary200;
+  }
+
+  .w7-button-label {
+    font-family: Ultra, serif;
+    font-style: italic;
+  }
+}
+

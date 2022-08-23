@@ -1,0 +1,17 @@
+<div class="w7-flex w7-flex-row"
+     style="height: 100%">
+
+  <ff-menu-navigator #menuNavigator (onNavItemClick)="onNavItemClick($event)"></ff-menu-navigator>
+
+  <div class="w7-flex w7-flex-col w7-flex-fill"
+       style="overflow-y: auto"
+       (click)="menuNavigator.closeMenu()">
+
+    <!-- event carousel -->
+    <ff-special-event style="margin-top: 1rem; margin-bottom: 2vh"></ff-special-event>
+
+    <ff-menu-list [listTitle]="listTitle" [filter]="filter"></ff-menu-list>
+
+  </div>
+
+</div>

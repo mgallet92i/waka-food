@@ -1,0 +1,44 @@
+[
+  {
+    "label": "LE MENU DONER BURGER",
+    "category": "MENU",
+    "description": "1 Doner Burger, 1 frite, 1 boisson",
+    "price": 5,
+    "img": "../../../../assets/img/dishes/burger/doner-burger1.jpg"
+  },
+  {
+    "label": "DONER BURGER",
+    "category": "BURGER",
+    "description": "salade, tomates, ognions...",
+    "price": 5,
+    "img": "../../../../assets/img/dishes/burger/doner-burger1.jpg"
+  },
+  {
+    "label": "big mac",
+    "category": "BURGER",
+    "description": "double steak, salade,...",
+    "price": 5,
+    "img": ""
+  },
+  {
+    "label": "cheeseburger",
+    "category": "BURGER",
+    "description": "steak fromage...",
+    "price": 3,
+    "img": ""
+  },
+  {
+    "label": "le forman",
+    "category": "SANDWICH",
+    "description": "double steak, salade,...",
+    "price": 5,
+    "img": ""
+  },
+  {
+    "label": "Chicken wrap",
+    "category": "WRAP",
+    "description": "",
+    "price": 3,
+    "img": ""
+  }
+]

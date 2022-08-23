@@ -1,0 +1,28 @@
+<div class="w7-flex w7-flex-col w7-flex-jc-end ff-dish-card-wrapper"
+     [style.background-image]=imgSrc>
+
+  <div class="w7-flex-fill ff-dish-card-calque" (click)="openDetails()"></div>
+
+  <div class="w7-flex w7-flex-ai-center w7-flex-jc-between ff-dish-card-footer">
+
+    <div class="ff-dish-card-label">
+      {{ data.label }}
+    </div>
+
+    <div class="w7-flex w7-flex-ai-center w7-flex-jc-end">
+
+      <div class="w7-flex w7-flex-jc-center w7-flex-ai-center ff-dish-card-btn">
+        <img class="ff-dish-card-basket"
+             [src]="'./assets/img/icons/basket-icon.png'"
+             [alt]="'basket icon'">
+      </div>
+
+      <div class="w7-flex w7-flex-jc-center w7-flex-ai-center ff-dish-card-btn">
+        {{ data.price }}€
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,12 @@
+<div class="w7-flex w7-flex-row w7-flex-ai-center w7-item"
+     (click)="onItemClick($event)"
+     [ngClass]="{'w7-highlight': selected, 'w7-disabled': disabled}">
+  <img *ngIf="item.imgSrc"
+       class="w7-item-img"
+       [src]="item.imgSrc"
+       [alt]="'item picture'">
+  <div *ngIf="item.label"
+       class="w7-item-label">
+    {{ item.label }}
+  </div>
+</div>

@@ -1,0 +1,28 @@
+[
+  {
+    "label": "MENUS",
+    "code": "MENU",
+    "imgSrc": "./assets/img/icons/menu-icon.png",
+    "selected": true
+  },
+  {
+    "label": "BURGERS",
+    "code": "BURGER",
+    "imgSrc": "./assets/img/icons/burger-icon.png"
+  },
+  {
+    "label": "SANDWICHS",
+    "code": "SANDWICH",
+    "imgSrc": "./assets/img/icons/sandwich-icon.png"
+  },
+  {
+    "label": "WRAPS",
+    "code": "WRAP",
+    "imgSrc": "./assets/img/icons/wrap-icon.png"
+  },
+  {
+    "label": "BOISSONS",
+    "code": "DRINK",
+    "imgSrc": "./assets/img/icons/cold-drink-icon.png"
+  }
+]

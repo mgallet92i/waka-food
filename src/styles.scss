@@ -1,0 +1,64 @@
+@import './src/variables';
+@import './w7-lib/w7-layout/w7-flexbox';
+@import './w7-lib/w7-layout/w7-dialog';
+
+html {
+  height: 100%;
+  background: url('assets/img/ff-wall-texture.jpg') no-repeat center/cover fixed;
+}
+
+body {
+  height: 100%;
+  margin: unset;
+}
+
+@font-face {
+  font-family: 'Ultra';
+  src: url('assets/font/Ultra-Regular.ttf') format('truetype');
+}
+
+.ff-menu-block-title {
+  color: $primary100;
+  font-family: Ultra, serif;
+  padding-left: 1rem;
+  font-size: 28px;
+  font-style: italic;
+}
+
+@media (max-width: 767px) {
+  .ff-menu-block-title {
+    font-size: 18px;
+  }
+}
+
+.p-dialog-mask {
+  background-color: $secondary110;
+}
+
+.p-dialog {
+  background-color: $primary102;
+  box-shadow: 9px 8px 19px 0 $primary101;
+  color: $secondary200;
+}
+
+.p-dialog-header-icon {
+  background-color: $secondary200;
+}
+
+.p-dialog-title {
+  font-size: 24px;
+  margin-right: 7rem;
+}
+
+.p-dialog-header {
+  border-bottom: 3px dashed $secondary200;
+  padding-bottom: 5px;
+}
+
+.p-dialog-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 5rem;
+}
+

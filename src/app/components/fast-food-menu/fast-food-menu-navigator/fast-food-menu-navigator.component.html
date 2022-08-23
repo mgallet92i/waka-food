@@ -1,0 +1,47 @@
+<div class="w7-flex w7-flex-col w7-flex-ai-center w7-flex-jc-between ff-nav-container"
+     [ngClass]="{'ff-nav-show': showMenu}">
+
+  <!--  header-->
+  <div class="w7-flex w7-flex-col w7-flex-ai-center"
+       style="margin-bottom: 5px">
+    <img class="ff-app-logo" [src]="headerLogoSrc" [alt]="'logo'">
+    <w7-button class="ff-order-btn" [label]="'COMMANDER'"></w7-button>
+  </div>
+
+  <!--  content-->
+  <div class="w7-flex w7-flex-col w7-flex-ai-center ff-nav-content">
+
+    <img class="ff-img-menu" [src]="contentTitleSrc" [alt]="'title'">
+
+    <div class="w7-flex w7-flex-col">
+      <ng-container *ngFor="let item of navItemsData">
+        <w7-nav-item [item]="item" (onClick)="onItemClick($event)"></w7-nav-item>
+      </ng-container>
+    </div>
+
+  </div>
+
+  <!--  footer-->
+  <div class="w7-flex w7-flex-col w7-flex-ai-center ff-nav-footer">
+
+    <div class="w7-flex w7-flex-row">
+      <ul>
+        <li>L'entreprise</li>
+        <li>Mentions légales</li>
+        <li>...</li>
+      </ul>
+      <ul>
+        <li>Nous contacter</li>
+        <li>...</li>
+      </ul>
+    </div>
+
+    <div>
+      version {{ ffVersion }}
+    </div>
+
+  </div>
+
+</div>
+
+<w7-button class="ff-menu-btn" [iconTag]="iconTag" (onClick)="toggleMenu()"></w7-button>

@@ -1,0 +1,5 @@
+<button class="w7-flex w7-flex-row w7-flex-ai-center w7-flex-jc-center w7-button"
+        (click)="onBtnClick($event)">
+  <fa-icon *ngIf="iconTag" [icon]="iconTag"></fa-icon>
+  <span *ngIf="label" class="w7-button-label">{{ label }}</span>
+</button>

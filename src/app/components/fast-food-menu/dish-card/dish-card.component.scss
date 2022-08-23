@@ -1,0 +1,128 @@
+@import "./src/variables";
+@import "./src/w7-lib/w7-layout/w7-animation";
+
+.ff-dish-card-wrapper {
+  margin: 12px;
+  min-width: 20rem;
+  min-height: 12rem;
+  background-color: $primary100;
+  border-radius: 20px;
+  box-shadow: 9px 8px 19px 0 $secondary100;
+  animation: zoomOut 500ms ease-in forwards;
+}
+
+.ff-dish-card-wrapper:hover {
+  animation: zoomIn 500ms ease-out forwards;
+  // animation: zoomIn 500ms cubic-bezier(0, 0, 0.9, 1) forwards;
+}
+
+@media (max-width: 767px) {
+  .ff-dish-card-wrapper {
+    width: 75vw;
+    height: 42vw; // height depend of screen width
+  }
+  .ff-dish-card-label {
+    font-size: 2.2vw;
+  }
+  .ff-dish-card-btn {
+    height: 4.5vw;
+    width: 7vw;
+    font-size: 2.4vw;
+  }
+  .ff-dish-card-basket {
+    width: 2.4vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .ff-dish-card-wrapper {
+    width: 58vw;
+    height: 33vw; // height depend of screen width
+  }
+  .ff-dish-card-label {
+    font-size: 2.2vw;
+  }
+  .ff-dish-card-btn {
+    height: 4.5vw;
+    width: 7vw;
+    font-size: 2.4vw;
+  }
+  .ff-dish-card-basket {
+    width: 2.4vw;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .ff-dish-card-wrapper {
+    width: 32vw;
+    height: 20vw;
+  }
+  .ff-dish-card-label {
+    font-size: 1.5vw;
+  }
+  .ff-dish-card-btn {
+    height: 2.4vw;
+    width: 6vw;
+    font-size: 2vw;
+  }
+  .ff-dish-card-basket {
+    width: 2vw;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .ff-dish-card-wrapper {
+    width: 24vw;
+    height: 14vw;
+  }
+  .ff-dish-card-label {
+    font-size: 1vw;
+  }
+  .ff-dish-card-btn {
+    height: 2vw;
+    width: 4vw;
+    font-size: 1.5vw;
+  }
+  .ff-dish-card-basket {
+    width: 1.5vw;
+  }
+}
+
+@media (min-width: 1921px) {
+  .ff-dish-card-wrapper {
+    width: 20vw;
+    height: 12vw;
+  }
+  .ff-dish-card-label {
+    font-size: 1vw;
+  }
+  .ff-dish-card-btn {
+    height: 1.6vw;
+    width: 3vw;
+    font-size: 1vw;
+  }
+  .ff-dish-card-basket {
+    width: 1vw;
+  }
+}
+
+.ff-dish-card-footer {
+  padding-left: 1rem;
+  height: 18%;
+  background-color: $secondary110;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.ff-dish-card-label {
+  color: $primary110;
+  font-family: Ultra, serif;
+}
+
+.ff-dish-card-btn {
+  background-color: $primary100;
+  color: $secondary200;
+  border-radius: 20px;
+  font-weight: 1000;
+  margin-right: 5px;
+}
